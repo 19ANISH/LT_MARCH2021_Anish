@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Courses</title>
+</head>
+<body>
+<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li class="active"><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav button -->
+	<!-- insert navigation icon/image according to the desgin this one is not suiteable -->
+	<img src="./images/menu.png" alt="navimg" id="menuBtn">
+	<!-- Courses Section -->
+	<section id="courses">
+		<div class="container course-row">
+			<div class="courses-left">
+				<div class="text-courses">
+					<h1>Our Courses</h1>
+					<div class="line"></div>
+					<div class="list-style" style="font-weight: bold;">
+					<li>
+						C
+					</li>
+					<li>
+						Data Structures
+					</li>
+					<li>
+						Front-End Web-development
+					</li>
+					<li>
+						Full Stack Developer
+					</li>
+					<span id="dots"></span>
+					<span id="more"><li>
+						C++
+					</li>
+					<li>
+						Java
+					</li>
+					<li>
+						Python
+					</li>
+					<li>
+						Angular Js and React Js
+					</li>
+					<li>
+						AI, ML
+					</li>
+				</span>
+				</div>
+				</div>
+				<br>
+				<br>
+				<button onclick="myFunction()" class="btn" id="readBtn">
+					Read More
+				</button>
+			</div>
+			<div class="courses-right">
+				<img src="./images/course.png">
+			</div>
+		</div>
+	</section>
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidebar = document.getElementById("sidebar");
+		sidebar.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidebar.style.right == "-250px"){
+				sidebar.style.right = "0";
+			}
+			else{
+				sidebar.style.right = "-250px";
+			}
+		}
+	</script>
+	<script>
+		function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

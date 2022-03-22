@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Contact</title>
+</head>
+<body>
+<section id="contact">
+	<div class="container contact-row">
+		<div class="contact-left">
+			<h1>Have any questions?</h1><br>
+			<h1>Reach Us</h1>
+			<div class="line"></div>
+			<form>
+				<input type="text" placeholder="Enter Name">
+				<input type="email" placeholder="Enter Email">
+				<input type="number" placeholder="Enter Phone">
+				<input type="text" placeholder="Enter your message">
+				<div class="btn-box">
+					<button class="btn"> 
+						Send	
+					</button>
+				</div>
+			</form>
+			<div class="line"></div>
+			<h1>Sign Up</h1>
+			<div class="line"></div>
+			<form>
+				<input type="text" placeholder="Enter Name">
+				<input type="email" placeholder="Enter Email">
+				<input type="password" placeholder="Enter Password">
+				<div class="btn-box">
+					<button class="btn"> 
+						Sign-up	
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="contact-right">
+			<img src="./images/contact.png">
+		</div>
+	</div>
+</section>
+
+<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li class="active"><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav button -->
+	<!-- insert navigation icon/image according to the desgin this one is not suiteable -->
+	<img src="./images/menu.png" alt="navimg" id="menuBtn">
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidebar = document.getElementById("sidebar");
+		sidebar.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidebar.style.right == "-250px"){
+				sidebar.style.right = "0";
+			}
+			else{
+				sidebar.style.right = "-250px";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>About us</title>
+</head>
+<body>
+<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav button -->
+	<!-- insert navigation icon/image according to the desgin this one is not suiteable -->
+	<img src="./images/menu.png" alt="navimg" id="menuBtn">
+	<section id="about">
+		<div class="about-left">
+			<img src="./images/about.png"  alt="aboutimg">
+		</div>
+		<div class="about-right">
+			<div class="text-about">
+				<h1>About Us</h1>
+				<p><span style="font-weight: bold; font-size: 22px;"><br>KnowledgeGainer</span><br>Our main purpose is to provide education and right direction to upcoming developers and programmers in their respective fields. Our teachers are alumin from top colleges of India and they are well experienced in their respective fields.</p>
+				<div class="line right-line"></div>
+				<h2>An investment in knowledge pays the best interest</h2>
+				<h3>~Benjamin Franklin</h3>
+			</div>
+		</div>
+	</section>
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidebar = document.getElementById("sidebar");
+		sidebar.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidebar.style.right == "-250px"){
+				sidebar.style.right = "0";
+			}
+			else{
+				sidebar.style.right = "-250px";
+			}
+		}
+	</script>
+</body>
+</html>

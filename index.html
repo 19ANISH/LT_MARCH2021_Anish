@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Home</title>
+</head>
+<body>
+	<section id=header>
+		<div class="container">
+			<a href="index.html">
+			<img src="./images/logo1.png" alt="logo" class="logo"></a>
+			<div class="header-text">
+				<!--<img src="./images/background.png">-->
+				<h1>We are on a mission to share our coding knowledge with students.</h1>
+				<div class="line"></div>
+				<p class="text">
+					We are KnowledgeGainer, we are here to provide our education to the upcoming students who are interested to level up their knowledge.<span id="dots">...</span><span id="more">Our organization was found in 2010, in Solapur, Maharashtra.<br>Our teachers are well qualified and well educated in their particular fields, each teacher is assigned one student to give have a special one on one attention on students and track their progress.</span>
+				</p>
+				<button onclick="myFunction()" class="btn" id="readBtn">
+					Read More
+				</button>
+				<!--<a href="about.html" class="btn" id="readBtn">
+					Read More
+				</a>-->
+				<div class="line"></div>
+			</div>
+		</div>
+	</section>
+	<nav id="sidebar">
+		<ul>
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav button -->
+	<!-- insert navigation icon/image according to the desgin this one is not suiteable -->
+	<img src="./images/menu.png" alt="navimg" id="menuBtn">
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidebar = document.getElementById("sidebar");
+		sidebar.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidebar.style.right == "-250px"){
+				sidebar.style.right = "0";
+			}
+			else{
+				sidebar.style.right = "-250px";
+			}
+		}
+	</script>
+	<script>
+		function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+</body>
+</html>

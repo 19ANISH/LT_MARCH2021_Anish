@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Services</title>
+</head>
+<body>
+<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li class="active"><a href="services.html">Services</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav button -->
+	<!-- insert navigation icon/image according to the desgin this one is not suiteable -->
+	<img src="./images/menu.png" alt="navimg" id="menuBtn">
+	<!-- services section -->
+	<section id="services">
+		<div class="services-row">
+			<div class="services-col">
+				<img src="./images/pic-1.png" alt="servicesimg1">
+				<h4>Our Services</h4>
+				<p>We provide video lectures and teaching for almost every programming subject with a certification once you complete the lectures like <ul>Andriod</ul><ul>C Programming</ul><ul>Cpp</ul><ul>Python Programming</ul><ul>Java</ul></p>
+			</div>
+			<div class="services-col">
+				<img src="./images/pic-2.png" alt="servicesimg2">
+				<h4>Content we provide</h4>
+				<p>We provide one on one teaching and doubt solving and daily live teaching session between students and teacher. <br> We also record our live lectures and provide it to students for their further references as well.</p>
+			</div>
+			<div class="services-col">
+				<img src="./images/pic-3.png" alt="servicesimg3">
+				<h4>LifeTime Access</h4>
+				<p>Our recorded lectures are sent to you and are free to download and access it from anywhere from your account for life-time as we don't want our students to spend money again on the same course.</p>
+			</div>
+		</div>
+		<div class="services-btn">
+			<button class="btn">
+			<a href="courses.html" style="text-decoration: none; color: black; font-weight: bold;">Courses</a>
+			</button>
+		</div>
+		
+	</section>
+
+
+
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidebar = document.getElementById("sidebar");
+		sidebar.style.right = "-250px";
+		menuBtn.onclick = function(){
+			if(sidebar.style.right == "-250px"){
+				sidebar.style.right = "0";
+			}
+			else{
+				sidebar.style.right = "-250px";
+			}
+		}
+	</script>
+</body>
+</html>
