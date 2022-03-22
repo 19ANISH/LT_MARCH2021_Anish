@@ -304,8 +304,13 @@ form input{
 		padding: 10px 16px;
 		
 	}
-	.about-left, .about-right
+	.about-left
 	{
+		padding-left: 10px;
+		flex-basis: 100%;
+	}
+
+	.about-right{
 		flex-basis: 100%;
 	}
 
